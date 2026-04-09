@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(mkdir -p app/src/main/java/com/statusnoblur/app)",
+      "Bash(mkdir -p app/src/main/res/layout)",
+      "Bash(mkdir -p app/src/main/res/values)",
+      "Bash(mkdir -p app/src/main/res/drawable)",
+      "Bash(mkdir -p app/src/main/res/xml)",
+      "Bash(curl -sL \"https://services.gradle.org/distributions/gradle-8.5-bin.zip\" -o /tmp/gradle.zip)",
+      "Bash(unzip -q -j /tmp/gradle.zip \"gradle-8.5/lib/gradle-wrapper-*.jar\" -d gradle/wrapper/)",
+      "Bash(rm -f gradle-wrapper-shared-8.5.jar)",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/gradle/gradle/v8.5.0/gradle/wrapper/gradle-wrapper.jar\" -o gradle-wrapper.jar)",
+      "Bash(gh auth:*)",
+      "Bash(git config:*)",
+      "Bash(where git:*)"
+    ]
+  }
+}
