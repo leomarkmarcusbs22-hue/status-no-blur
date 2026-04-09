@@ -13,7 +13,14 @@
       "Bash(curl -sL \"https://raw.githubusercontent.com/gradle/gradle/v8.5.0/gradle/wrapper/gradle-wrapper.jar\" -o gradle-wrapper.jar)",
       "Bash(gh auth:*)",
       "Bash(git config:*)",
-      "Bash(where git:*)"
+      "Bash(where git:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(java -jar gradle/wrapper/gradle-wrapper.jar --version)",
+      "Bash(rm gradle/wrapper/gradle-wrapper.jar)",
+      "Bash(curl -sL \"https://github.com/nicferrier/gradle-wrapper/raw/master/gradle-wrapper.jar\" -o gradle/wrapper/gradle-wrapper.jar)",
+      "Bash(curl -sL -o /tmp/gradle-8.5-bin.zip \"https://services.gradle.org/distributions/gradle-8.5-bin.zip\")",
+      "Bash(unzip -p /tmp/gradle-8.5-bin.zip gradle-8.5/lib/gradle-launcher-8.5.jar)",
+      "Bash(unzip -l /tmp/gradle-8.5-bin.zip)"
     ]
   }
 }
