@@ -7,7 +7,6 @@ import android.media.MediaFormat
 import android.media.MediaMuxer
 import android.net.Uri
 import java.io.File
-import java.io.FileOutputStream
 import java.nio.ByteBuffer
 
 object VideoProcessor {
